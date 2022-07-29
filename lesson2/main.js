@@ -1,6 +1,6 @@
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-let array1 = [123, 'Hudiak', 'Mykola', 'Fedorovych', 10, 7, 1994, 'Wolksvagen', 'Okten', true]
+let array1 = [123, 'Hudiak', 'Mykola', 'Fedorovych', 10, 7, 1994, 'Wolksvagen', 'Okten', true];
 console.log(array1[0]);
 console.log(array1[1]);
 console.log(array1[2]);
