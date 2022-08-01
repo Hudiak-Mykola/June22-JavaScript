@@ -131,6 +131,10 @@ if (x > 0 || x < 0) {
 //     console.log(x || 'default')
 // }
 
+// більш правиьний варіант
+let x = undefined || 'default'
+console.log(x)
+
 
 
 

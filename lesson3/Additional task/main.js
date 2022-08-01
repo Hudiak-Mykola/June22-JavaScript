@@ -2,11 +2,12 @@
 // кількість елементів у масиві більше або дорівнює 3, то виводиться повідомлення про те, що це великий масив, в якому  3 і більше елементи.
 //     Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.
 
-let array = ['Ivan','Slavik','Grisha','Lera', 'Ira']
-let rez =(array.length)
-console.log(rez)
-if (rez >= 3) {
-    console.log('це великий масив')
-}else {
-    console.log('це маленький масив')
-}
+// let array = ['Ivan','Slavik','Grisha','Lera', 'Ira'];
+// let rez = (array.length);
+// console.log(rez);
+// if (rez >= 3) {
+//     console.log('це великий масив');
+// }else {
+//     console.log('це маленький масив');
+// }
+
