@@ -3,33 +3,33 @@
 //     що дорівнює 1, 0, -3
 
 
-let x = prompt('введіть число')
-if (x > 0 || x < 0) {
-   console.log('Вірно')
-} else {
-    console.log('невірно')
-}
-
-let a =[ 1, 0, -3];
-
-x = a[0];
-if (x > 0 || x < 0) {
-    console.log('Вірно')
-} else {
-    console.log('невірно')
-}
-x = a[1];
-if (x > 0 || x < 0) {
-    console.log('Вірно')
-} else {
-    console.log('невірно')
-}
-x = a[2]
-if (x > 0 || x < 0) {
-    console.log('Вірно')
-} else {
-    console.log('невірно')
-}
+// let x = prompt('введіть число')
+// if (x > 0 || x < 0) {
+//    console.log('Вірно')
+// } else {
+//     console.log('невірно')
+// }
+//
+// let a =[ 1, 0, -3];
+//
+// x = a[0];
+// if (x > 0 || x < 0) {
+//     console.log('Вірно')
+// } else {
+//     console.log('невірно')
+// }
+// x = a[1];
+// if (x > 0 || x < 0) {
+//     console.log('Вірно')
+// } else {
+//     console.log('невірно')
+// }
+// x = a[2]
+// if (x > 0 || x < 0) {
+//     console.log('Вірно')
+// } else {
+//     console.log('невірно')
+// }
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години
 // попадає число // (в першу, другу, третю или четверту частину години).
 
@@ -132,8 +132,9 @@ if (x > 0 || x < 0) {
 // }
 
 // більш правиьний варіант
-let x = undefined || 'default'
+let x = '9' || 'default'
 console.log(x)
+
 
 
 
