@@ -1,0 +1,36 @@
+body{
+    background-color: #6c6b6b;
+    display: flex;
+    justify-content: center;
+}
+.wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+    justify-content: center;
+    border: 2px solid black;
+    padding-top:  10px;
+    padding-bottom:  10px;
+    border-radius: 10px;
+
+
+
+
+
+}
+.post-card {
+    display: flex;
+    flex-direction: column;
+    background-color: darkkhaki;
+    width: 210px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    padding-right: 7px;
+    padding-left: 7px;
+}
