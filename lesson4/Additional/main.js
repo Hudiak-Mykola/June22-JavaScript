@@ -628,6 +628,7 @@
 document.write(`<div class="wrap">`)
 	for (const arrElement of arr){
 		document.write(`<div class="post-card">`)
+			document.write(` <button onclick="window.location.href = 'https://github.com/Hudiak-Mykola';">Click</button>`)
 			document.write(`<h3>${arrElement.id} - ${arrElement.title}</h3>`)
 			document.write(`<p>${arrElement.body}</p>`)
 		document.write(`</div>`)

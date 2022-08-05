@@ -15,10 +15,6 @@ body{
     padding-bottom:  10px;
     border-radius: 10px;
 
-
-
-
-
 }
 .post-card {
     display: flex;
@@ -26,11 +22,16 @@ body{
     background-color: darkkhaki;
     width: 210px;
     border-radius: 10px;
-    justify-content: center;
+   align-items: center;
     text-align: center;
 }
 p{
     text-align: justify;
     padding-right: 7px;
     padding-left: 7px;
+}
+button{
+    width: 50px;
+    display: flex;
+    justify-content: center;
 }

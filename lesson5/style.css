@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+.post-card{
+    display: flex;
+    flex-direction: column;
+    background-color: darkkhaki;
+    width: 210px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+
+}
