@@ -78,21 +78,30 @@
 // arrayObjects(users)
 
 // - створити функцію яка повертає найменьше число з масиву
-// let massive = [2, 8, 6, 78, 90, 24, 4, 5, 7675, 23,];
-// function sortArray(array) {
-//     massive.sort(function(a, b) {
-//         return a - b;
-//     });
-//     console.log(array[0])
+// let massive = [9, 99, 8, 7, -9, 10];
+// function foo(arr) {
+//     let min = arr[0];
+//     for (let number of arr) {
+//         if (min > number) {
+//             min = number;
+//         }
+//     }
+//
+//     return min;
 // }
+//
+// console.log(foo(massive))
+
+
 // sortArray(massive)
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-// let massive = [2, 8, 6, 78, 90, 24, 4, 5, 7675, 23,];
-// function arraySum(array){
-//     let sum = 0;
-//     for (let i = 0; i < array.length; i++) {
-//       sum += array[i];
-//     }
-//     console.log(sum)
-// }
-// arraySum(massive);
+let massive = [2, 8, 6, 78, 90, 24, 4, 5, 7675, 23,];
+function arraySum(array){
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+      // debugger
+    }
+    console.log(sum)
+}
+arraySum(massive);
