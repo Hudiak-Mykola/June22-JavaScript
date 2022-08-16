@@ -49,8 +49,8 @@
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
-// let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
-
+// // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+//
 // function stringToarray(array) {
 //     console.log(array.split(' '))
 // }
@@ -65,7 +65,7 @@
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
-
+//
 // function sortNums(nums,direction) {
 //     if (direction === 'ascending') {
 //         nums.sort(function (a,b) {
@@ -250,3 +250,5 @@
 //     return accumulator;
 // },{spades:[], diamonds:[], hearts:[], clubs:[]});
 // console.log(sort)
+
+
