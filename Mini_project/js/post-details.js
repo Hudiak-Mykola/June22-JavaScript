@@ -18,6 +18,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${id}/`)
     .then(postInfo => {
         console.log(postInfo)
         for (const postInfoKey in postInfo) {
+
             let p = document.createElement('p')
             p.innerText = `${postInfoKey}: ${postInfo[postInfoKey]}`
             divP.appendChild(p)
@@ -32,6 +33,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
     .then(coments => {
         console.log(coments)
         for (const coment of coments) {
+
             let div = document.createElement('div')
             div.classList.add('coment')
             div.innerText = `${coment.body}`

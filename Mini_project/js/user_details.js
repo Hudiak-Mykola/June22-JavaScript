@@ -12,35 +12,68 @@ let mainDiv = document.createElement('div');
 mainDiv.classList.add('mainUserInfo')
 document.body.appendChild(mainDiv)
 
+ let divUserCard = document.createElement('div')
+ divUserCard.classList.add('user_card')
+ mainDiv.appendChild(divUserCard)
+
+ let divInform = document.createElement('div')
+ divInform.classList.add('inform')
+ divInform.innerText = 'USER INFORMATION:'
+ divUserCard.appendChild(divInform)
+
+ let divAddress = document.createElement('div')
+ divAddress.classList.add('address')
+ divAddress.innerText = 'ADDRESS:'
+ divUserCard.appendChild(divAddress)
+
+ let divGeo = document.createElement('div')
+divGeo.classList.add('geo')
+ divGeo.innerText = 'GEO:'
+ divUserCard.appendChild(divGeo)
+
+ let divCompany = document.createElement('div')
+ divCompany.classList.add('company')
+ divCompany.innerText = 'COMPANY:'
+ divUserCard.appendChild(divCompany)
+
 fetch(`https://jsonplaceholder.typicode.com/users/${id}/`)
     .then(response => response.json())
     .then(user => {
-            let divUserCard = document.createElement('div')
-            divUserCard.classList.add('user_card')
-            divUserCard.innerText = `id: ${user.id}
-             name: ${user.name}
-             username: ${user.username}
-             email: ${user.email}
-             phone: ${user.phone}
-             
-             address:
-             
-             street: ${user.address.street}
-             suite: ${user.address.suite}
-             city: ${user.address.city}
-             zipcode: ${user.address.zipcode}
-             
-             geo:
-             
-             lat: ${user.address.geo.lat}
-             lng: ${user.address.geo.lng}
-             
-             company:
-             
-             bs: ${user.company.bs}
-             catchPhrase ${user.company.catchPhrase}
-             name: ${user.company.name}`
-            mainDiv.appendChild(divUserCard)
+        for (const userKey in user) {
+            if (typeof user[userKey] !== 'object') {
+                let p = document.createElement('p')
+                p.classList.add('some')
+                p.innerText = `${userKey} - ${user[userKey]}`
+                divInform.appendChild(p)
+            }
+
+        }
+        for (const Key in user.address) {
+            if (typeof user.address[Key] !== 'object') {
+                let p = document.createElement('p')
+                p.classList.add('some')
+                p.innerText = `${Key} - ${user.address[Key]}`
+                divAddress.appendChild(p)
+            }
+        }
+        for (const Key in user.address.geo) {
+            if (typeof user.address.geo[Key] !== 'object') {
+                let p = document.createElement('p')
+                p.classList.add('some')
+                p.innerText = `${Key} - ${user.address.geo[Key]}`
+                divGeo.appendChild(p)
+            }
+        }
+        for (const Key in user.company) {
+            if (typeof user.company[Key] !== 'object') {
+                let p = document.createElement('p')
+                p.classList.add('some')
+                p.innerText = `${Key} - ${user.company[Key]}`
+                divCompany.appendChild(p)
+            }
+        }
+
+
 
         let btnPosts = document.createElement('button')
         btnPosts.innerText = 'post of current user'
@@ -68,7 +101,12 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/`)
                         btnPostInfo.onclick = function () {
                             window.location.href=`post-details.html?id=${post.id}`
                         }
-                    }})}})
+                    }
+
+
+
+                })
+            }})
 
 
 
