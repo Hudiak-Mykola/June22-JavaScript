@@ -40,6 +40,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/`)
     .then(response => response.json())
     .then(user => {
         for (const userKey in user) {
+            console.log(user)
             if (typeof user[userKey] !== 'object') {
                 let p = document.createElement('p')
                 p.classList.add('some')

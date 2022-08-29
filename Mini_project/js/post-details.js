@@ -25,6 +25,12 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${id}/`)
         }
 
     })
+
+let coments = document.createElement('div')
+coments.classList.add('coments')
+coments.innerText = 'Post coments:'
+mainDiv.appendChild(coments)
+
 let divComent = document.createElement('div');
 divComent.classList.add('mainComent')
 mainDiv.appendChild(divComent);

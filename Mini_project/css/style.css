@@ -46,6 +46,14 @@ body{
    justify-content: center;
 
 }
+.coments{
+    width: 70%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    background: silver;
+    border-radius: 10px;
+}
 .coment{
     background: silver;
     border: 2px black solid;
